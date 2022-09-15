@@ -1,0 +1,11 @@
+{% for Student in Students%}
+    First Name: {{Student.firstname}}<br>
+    Last Name: {{Student.lastname}}<br>
+    Enrollment Date: {{Student.dateenrolled}}<br>
+    Enrollment Status: {{Student.estatus}}<br>
+    Contact Number: {{Student.contactnum}}<br>
+    Course Name: {{Student.course__cname}}<br>
+    Course ID: {{Student.course__cid}}
+    <!-- <img src="http" height="100" width="100"> -->
+    <hr>
+{% endfor %}
