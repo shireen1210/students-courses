@@ -16,7 +16,7 @@ def ShireenPsid(request):
     return HttpResponse("<h1>My PSID id 50411.</h1>")
 
 def index(request):
-    Students=Student.objects.all().values("firstname","lastname","dateenrolled","estatus","contactnum","course__cname","course__cid")
+    Students=Student.objects.all().values("firstname","lastname","dateenrolled","estatus","contactnum","course__cname","course__cid","image")
     return render(request,"index.html",{"Students":Students})
 
 def search(request):
